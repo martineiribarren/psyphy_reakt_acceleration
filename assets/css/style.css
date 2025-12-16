@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&display=swap');
+
+:root {
+  --bg-color: #050505;       /* Negro casi puro */
+  --text-color: #e0e0e0;     /* Blanco suave */
+  --accent-color: #00f3ff;   /* Cian Neón */
+  --dim-color: #444;         /* Gris oscuro para bordes */
+  --font-main: 'JetBrains Mono', monospace;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  line-height: 1.6;
+  margin: 0;
+  padding: 2rem;
+}
+
+/* Tipografía y Encabezados */
+h1, h2, h3 {
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+h1 { 
+  border-bottom: 2px solid var(--accent-color); 
+  padding-bottom: 0.5rem;
+  text-shadow: 0 0 10px rgba(0, 243, 255, 0.3); /* Glow effect */
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  box-shadow: 0 0 15px var(--accent-color);
+}
+
+/* Botones CTA (Call to Action) */
+.btn {
+  display: inline-block;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 10px 20px;
+  margin: 10px 5px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background: var(--accent-color);
+  color: var(--bg-color);
+  cursor: pointer;
+}
+
+/* Bloques de código y citas */
+blockquote {
+  border-left: 4px solid var(--accent-color);
+  background: #111;
+  padding: 10px 20px;
+  font-style: italic;
+  margin-left: 0;
+}
+
+code {
+  background: #1a1a1a;
+  color: var(--accent-color);
+  padding: 2px 5px;
+  font-size: 0.9em;
+}
+
+/* Navegación */
+nav {
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--dim-color);
+  padding-bottom: 20px;
+}
+nav a {
+  margin-right: 20px;
+  font-size: 0.9rem;
+}
