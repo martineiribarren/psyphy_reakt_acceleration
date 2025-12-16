@@ -15,7 +15,7 @@ kramdown:
 
 # Menú de Navegación
 header_pages:
-  - index.md
+  - docs/index.md
   - pages/theory.md
   - pages/experiment.md
   - pages/metrics.md
